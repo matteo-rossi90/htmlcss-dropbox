@@ -1,6 +1,146 @@
+/* regole generali */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-family:'Open Sans', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* proprietà margini jumbotron e footer */
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* proprietà geneale bottoni */
+
+button{
+    padding: 8px 10px;
+}
+
+
+/* HEADER */
+
+/* barra di navigazione */
+
+#navbar{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#flex-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-nav{
+    display: flex;
+    /* width: 50%; */
+    /* height: 30px; */
+    background-color: goldenrod;
+    margin: 10px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.col-nav li{
+    padding: 0 30px;
+    text-align: center;
+}
+
+#logo img {
+    width: 80%;
+    margin-top: 10px;
+}
+
+/* proprietà jumbotron */
+
+
+.content-row{
+    /* height: 500px; */
+    padding: 80px 0;
+    background-color: #B4D0E7;
+
+}
+
+.jumbo-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text{
+    width: 30%;
+    height: 300px;
+    background-color: pink;
+}
+
+.box-text span{
+    display: block;
+}
+
+.margin{
+    margin: 30px 0;
+}
+
+figure.image{
+    width: 70%;
+    height: 300px;
+    background-color: dodgerblue;
+}
+
+.btn-input{
+    margin: 40px 0;
+}
+
+/* PARTE CENTRALE - MAIN */
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    /* height: 500px; */
+    width: 100%;
+}
+
+#footernav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.col-footer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: calc(100% / 5);
+    background-color: aqua;
+    border: 1px red dashed;
+    margin-top: 20px;
+}
+
+.menu-footer{
+    list-style-type: none;
+}
+
+/* regole selettore lingua */
+
+#lang{
+    Background-color: gold;
+    padding: 40px 0;
+    width: 10%;
+    
 }
