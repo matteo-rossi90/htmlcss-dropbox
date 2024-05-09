@@ -25,21 +25,26 @@
         <!-- barra di navigazione -->
         <nav id="navbar">
 
-            <!-- menu e logo di sinistra -->
             <div class="flex-object">
+
+                <!-- menu e logo di sinistra -->
                 <div class="col-nav">
-                    <div id="logo">
-                        <img src="img/logo-small.png" alt="">
-                    </div>
                     <ul class="menu">
                         <li>
-                            <a href="#">Item</a>
+                            <div id="logo">
+                                <a href="index.html">
+                                    <img src="img/logo-small.png" alt="">
+                                </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Funzioni</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani e Prezzi</a>
 
                         </li>
                     </ul>
@@ -49,20 +54,25 @@
                 <div class="col-nav">
                     <ul class="menu">
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Supporto</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Contatta l'ufficio vendite</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
-
+                            <a href="#">Accedi</a>
+                        </li>
+                        <li>
+                            <!-- bottone inizia -->
+                            <button class="btn-input">
+                                <span>
+                                    Inizia
+                                </span>
+                            </button>
                         </li>
                     </ul>
-                    <button>
-                        Inizia
-                    </button>
                 </div>
+
             </div>
 
         </nav>
@@ -70,22 +80,26 @@
         <!-- jumbotron -->
         <section class="content-row">
             <div class="container">
-                <h1 class="title">Titolo jumbotron</h1>
+                <h1 class="title main-text">
+                    Tutto ciò che ti serve <br>
+                    per il lavoro, in un unico posto
+                </h1>
                 <div class="flex-container">
                     <div class="box-text">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem obcaecati magni, 
-                            dolorum tenetur itaque beatae libero qui vitae. Nemo fugit incidunt voluptas 
-                            eius quibusdam ea quos sapiente nostrum excepturi esse.
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono disponibili
+                            dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione
+                            sicuro: è un modo intelligente e integrato per ottimizzare il flusso di 
+                            lavoro esistente.
                         </p>
-                        <button class="btn-input">
+                        <button class="btn-margin btn-input">
                             Inizia la tua prova gratuita
                         </button>
                         <span>Annulla in qualsiasi momento</span>
                         <i class="fa-solid fa-arrow-down"></i>
                     </div>
-                    <figure class="image">
-                        Image
+                    <figure class="image" id="image-jumbo">
+                        <img src="img/jumbo.png" alt="drop box jumbotron">
                     </figure>
                 </div>
             </div>
@@ -275,8 +289,8 @@
         <section class="container-main content">
 
             <div class="flex-container">
-                <figure class="image">
-                    image
+                <figure class="image" id="image-partners">
+                    <img src="img/partner.png" alt="">
                 </figure>
                 <aside class="box-text">
                     <h2>
@@ -410,7 +424,7 @@
                     <h3>Titolo</h3>
                     <ul class="menu-footer">
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#"></a>
                         </li>
                         <li>
                             <a href="#">Item</a>

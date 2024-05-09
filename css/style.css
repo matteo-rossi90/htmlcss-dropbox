@@ -29,10 +29,17 @@
     width: 60%;
 }
 
-/* proprietà geneale bottoni */
+/* proprietà geneali bottoni */
 
 button{
-    padding: 8px 10px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn-input{
+    color: white;
+    padding: 8px 16px;
+    background-color: #0061FF;
 }
 
 /* regola flex oggetti */
@@ -43,6 +50,23 @@ button{
     align-items: center;
 }
 
+/* regola generale colonne e immagini */
+
+.box-text {
+    max-width: 30%;
+    height: 500px;
+    background-color: pink;
+}
+
+.box-text span {
+    display: block;
+}
+
+figure.image {
+    max-width: 70%;
+    /* height: 500px; */
+    /* background-color: dodgerblue; */
+}
 
 /* HEADER */
 
@@ -63,7 +87,7 @@ button{
     /* width: 50%; */
     /* height: 30px; */
     /* background-color: goldenrod; */
-    margin: 10px;
+    margin: 8px;
 }
 
 .menu{
@@ -73,9 +97,18 @@ button{
 }
 
 .col-nav li{
-    padding: 0 30px;
+    padding: 0 15px;
     text-align: center;
 }
+
+.col-nav li a {
+    color:#666464;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 18px 0;
+    font-size: 14px;
+}
+
 
 #logo img {
     width: 80%;
@@ -84,32 +117,30 @@ button{
 
 /* proprietà jumbotron */
 
+.main-text{
+    font-size: 50px;
+    font-weight: 800;
+}
 
 .content-row{
-    /* height: 500px; */
     padding-top: 60px;
     background-color: #B4D0E7;
 
 }
 
-.box-text{
-    width: 30%;
-    height: 500px;
-    background-color: pink;
-}
-
-.box-text span{
-    display: block;
-}
-
-figure.image{
-    width: 70%;
-    height: 500px;
-    background-color: dodgerblue;
-}
-
-.btn-input{
+.btn-margin{
     margin: 40px 0;
+}
+
+i.fa-arrow-down {
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 40%;
+}
+
+#image-jumbo img {
+    width: 100%;
+    height: 100%;
 }
 
 /* PARTE CENTRALE - MAIN */
@@ -159,6 +190,13 @@ figure.image{
 
 #contact{
     width: 20%;
+}
+
+/* sezione partners */
+
+#image-partners img{
+    width: 100%;
+    height: 100%;
 }
 
 /* sezione con cards e info */
