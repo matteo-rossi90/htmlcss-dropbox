@@ -3,21 +3,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     font-family:'Open Sans', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* proprietà margini jumbotron e footer */
+.container, .container-main{
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* proprietà larghezza jumbotron e footer */
 
 .container{
-    width: 70%;
-    margin: 0 auto;
+    width: 75%;
+}
+
+/* proprietà larghezza sezioni della parte centrale */
+
+.container-main {
+    width: 60%;
 }
 
 /* proprietà geneale bottoni */
 
 button{
     padding: 8px 10px;
+}
+
+/* regola flex oggetti */
+
+.flex-object {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -35,17 +58,11 @@ button{
     left:0;
 }
 
-#flex-navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .col-nav{
     display: flex;
     /* width: 50%; */
     /* height: 30px; */
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     margin: 10px;
 }
 
@@ -70,15 +87,9 @@ button{
 
 .content-row{
     /* height: 500px; */
-    padding: 80px 0;
+    padding-top: 60px;
     background-color: #B4D0E7;
 
-}
-
-.jumbo-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .box-text{
@@ -89,10 +100,6 @@ button{
 
 .box-text span{
     display: block;
-}
-
-.margin{
-    margin: 30px 0;
 }
 
 figure.image{
@@ -106,6 +113,63 @@ figure.image{
 }
 
 /* PARTE CENTRALE - MAIN */
+
+/* sezione con piano business */
+
+.content, .title, #checkbox{
+    padding: 20px 0;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 800px;
+    width: calc(100% / 3);
+    background-color: pink;
+    border: 1px dashed red;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.list-business ul{
+    list-style-type: none;
+}
+
+.advantage-list ul{
+    list-style-type:decimal;
+}
+
+#card-enterprise{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: pink
+}
+
+#info{
+    width: 80%;
+}
+
+#contact{
+    width: 20%;
+}
+
+/* sezione con cards e info */
+
+.card-info{
+    display: flex;
+    background-color: green;
+    border: 1px dashed rgb(255, 255, 255);
+    width: calc(100% / 3);
+    height: 300px;
+}
 
 /* FOOTER */
 
