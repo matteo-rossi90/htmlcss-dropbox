@@ -8,7 +8,6 @@
 
 .container, .container-main{
     margin: 0 auto;
-    padding: 40px 0;
 }
 
 .center-content {
@@ -17,10 +16,41 @@
     align-items: center;
 }
 
+hr{
+    width: 20%;
+    border-top: 1px solid #aeaeae;
+}
+
 /* proprietà larghezza jumbotron e footer */
 
 .container{
     width: 75%;
+}
+
+/* proprietà generali titoli principali e intestazioni */
+
+.main-text {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.second-text{
+    font-size: 35px;
+    margin: 25px 0;
+}
+
+/* proprietà che regolano la spaziatura delle sezioni */
+
+.layout-margin{
+    margin-top: 30px;
+}
+
+.layout-padding{
+    padding-top: 8%;
+}
+
+.enlarge{
+    padding: 70px 0;
 }
 
 /* proprietà larghezza sezioni della parte centrale */
@@ -37,9 +67,23 @@ button{
 }
 
 .btn-input{
-    color: white;
     padding: 8px 16px;
+}
+
+.btn-input, .btn-large{
+    color: white;
     background-color: #0061FF;
+}
+
+.btn-large{
+    width: 100%;
+}
+
+
+/* regole box immagini jumbotron e nella sezione partners */
+
+figure.image-box img {
+    width: 100%;
 }
 
 /* regola flex oggetti */
@@ -54,8 +98,12 @@ button{
 
 .box-text {
     max-width: 30%;
-    height: 500px;
-    background-color: pink;
+    /* height: 500px; */
+    /* background-color: pink; */
+}
+
+div.box-text > p{
+    margin-top: 20px;
 }
 
 .box-text span {
@@ -80,6 +128,7 @@ figure.image {
     position: fixed;
     top:0;
     left:0;
+    z-index: 900;
 }
 
 .col-nav{
@@ -117,13 +166,8 @@ figure.image {
 
 /* proprietà jumbotron */
 
-.main-text{
-    font-size: 50px;
-    font-weight: 800;
-}
-
 .content-row{
-    padding-top: 60px;
+    /* padding-top: 60px; */
     background-color: #B4D0E7;
 
 }
@@ -138,51 +182,120 @@ i.fa-arrow-down {
     margin-top: 40%;
 }
 
-#image-jumbo img {
-    width: 100%;
-    height: 100%;
-}
-
 /* PARTE CENTRALE - MAIN */
 
 /* sezione con piano business */
 
-.content, .title, #checkbox{
-    padding: 20px 0;
+#checkbox {
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+}
+/* parte checkbox */
+
+#checkbox > .text{
+    padding: 0 10px;
+}
+
+#checkbox > .circle {
+    padding: 0 5px;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+}
+
+#selected{
+    border: 4px solid #0061FF;
+}
+
+#unselected {
+    border: 2px solid #9d9d9d;
+}
+
+.text{
+    font-size: 14px;
 }
 
 .flex-container{
     display: flex;
+    align-items: center;
+}
+
+.flex-card{
+    display: flex;
+    justify-content: stretch;
+    gap: 35px;
+}
+
+.row-col{
+    display:flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .card{
-    height: 800px;
     width: calc(100% / 3);
-    background-color: pink;
-    border: 1px dashed red;
+    border: 1px solid #aeaeae;
+
+}
+
+.card-title{
+    border-bottom: 1px dashed red;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .card-content{
     padding: 20px;
 }
 
-.list-business ul{
+.enlarge-item{
+    padding: 5px 0;
+}
+
+.list-business li, .advantage-list li{
+    padding: 10px 0;
+}
+
+.list-business, .advantage-list, .buy-onclick{
+    padding: 30px 0;
+}
+
+.card-content ul{
     list-style-type: none;
-}
-
-.advantage-list ul{
-    list-style-type:decimal;
-}
-
-#card-enterprise{
     display: flex;
-    height: 200px;
-    width: 100%;
-    background-color: pink
+    flex-direction: column;
 }
+
+.price{
+    font-weight: bold;
+}
+
+.per-month{
+    color: grey;
+}
+
+.fa-ul{
+    margin-left: var(--fa-li-margin, 1.5em);
+}
+
+.fa-check{
+    color: #0061FF;
+}
+
+.card-enterprise{
+    display: flex;
+    /* height: 200px; */
+    width: 100%;
+    background-color: pink;
+    border: 1px red dashed;
+}
+
 
 #info{
     width: 80%;
@@ -193,11 +306,6 @@ i.fa-arrow-down {
 }
 
 /* sezione partners */
-
-#image-partners img{
-    width: 100%;
-    height: 100%;
-}
 
 /* sezione con cards e info */
 
@@ -223,24 +331,42 @@ i.fa-arrow-down {
 .square{
     width: calc(100% / 2);
     height: calc(100% / 2);
+    position: relative;
     background-color: rosybrown;
     border: 1px dashed rgb(30, 129, 136);
 }
 
+.square img{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%)
+}
+
 /* sezione domande frequenti */
+
+.center-container{
+    padding: 8% 0;
+}
 
 /* accordion */
 .row{
     display: flex;
-    padding: 25px;
+    padding: 30px 0;
     width: 100%;
-    background-color: lightcoral;
-    height: calc(100% / 3);
-    border: 1px dashed black;
+}
+
+.border-top{
+    border-top: 1px solid grey;
+}
+
+.border-bottom{
+    border-bottom: 1px solid grey;
 }
 
 .row i{
-    line-height: 20px;
+    align-items: center;
 }
 
 /* FOOTER */
@@ -249,34 +375,49 @@ footer{
     background-color: black;
     /* height: 500px; */
     width: 100%;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }
 
 #footernav{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
     margin-bottom: 20px;
+    padding: 6% 0;
 }
 
 .col-footer{
     display: flex;
     flex-direction: column;
-    height: 200px;
-    width: calc(100% / 5);
-    background-color: aqua;
-    border: 1px red dashed;
-    margin-top: 20px;
+    gap: 20px;
+    /* height: 200px; */
+    /* width: calc(100% / 5); */
+    /* padding: 0 40px 0 0; */
+    /* background-color: aqua; */
+    /* border: 1px red dashed; */
+}
+
+ul.menu-footer li{
+    padding: 10px 0;
 }
 
 .menu-footer{
     list-style-type: none;
 }
 
+.col-footer ul li {
+    display: flex;
+}
+
 /* regole selettore lingua */
 
 #lang{
-    Background-color: gold;
+    border-top: 1px solid grey;
     padding: 40px 0;
     width: 10%;
-    
+    color: grey;
 }

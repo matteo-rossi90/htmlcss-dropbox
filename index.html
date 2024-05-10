@@ -45,7 +45,6 @@
                         </li>
                         <li>
                             <a href="#">Piani e Prezzi</a>
-
                         </li>
                     </ul>
                 </div>
@@ -78,7 +77,7 @@
         </nav>
 
         <!-- jumbotron -->
-        <section class="content-row">
+        <section class="content-row layout-padding">
             <div class="container">
                 <h1 class="title main-text">
                     Tutto ciò che ti serve <br>
@@ -92,13 +91,13 @@
                             sicuro: è un modo intelligente e integrato per ottimizzare il flusso di 
                             lavoro esistente.
                         </p>
-                        <button class="btn-margin btn-input">
+                        <button class="btn-margin btn-input btn-large">
                             Inizia la tua prova gratuita
                         </button>
                         <span>Annulla in qualsiasi momento</span>
                         <i class="fa-solid fa-arrow-down"></i>
                     </div>
-                    <figure class="image" id="image-jumbo">
+                    <figure class="image image-box">
                         <img src="img/jumbo.png" alt="drop box jumbotron">
                     </figure>
                 </div>
@@ -111,37 +110,69 @@
     <main>
 
         <!-- piano business -->
-        <section class="container-main content">
-            <h1 class="title">Trova il piano che fa più per te</h1>
+        <section class="container-main layout-padding">
+            <h1 class="title second-text">Trova il piano che fa più per te</h1>
 
             <!-- checkbox -->
             <div id="checkbox">
-                <span>Fatturazione mensile</span>
-                <span>Fatturazione annuale</span>
+                <span class="circle" id="selected"></span>
+                <span class="text">Fatturazione mensile</span>
+                <span class="circle" id="unselected"></span>
+                <span class="text">Fatturazione annuale</span>
             </div>
-            <div class="flex-container">
+            <div class="flex-card">
                 <div class="card">
-                    
+                    <header class="card-title">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Singolo</span>
+                    </header>
                     <div class="card-content">
-                        <header>
-                            Titolo header card
-                        </header>
 
-                        <h2>Titolo</h2>
-                        <div>Prezzo</div>
+                        <h2 class="enlarge-item">Professional</h2>
+                        <div class="price enlarge-item text">
+                            <span>12.00 &euro;</span>
+                        </div>
+                        <div class="per-month enlarge-item text">
+                            <span>/ mese</span>
+                        </div>
                         
                         <!-- lista vantaggi business -->
-                        <div class="list-business">
-                            <ul>
-                                <li>Lista</li>
-                                <li>Lista</li>
-                                <li>Lista</li>
+                        <div class="list-business text">
+                            <ul class="fa-ul">
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <span>1 utente</span>
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </span>
+                                    <span>
+                                        5 TB di spazio di archiviazione <br>
+                                        sicuro
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+                                    <span>
+                                        Funzioni di produttività premium e condivisione
+                                        file semplice e <br>sicura
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                         
-                        <button>Prova gratis per 30 giorni</button>
                         
-                        <div>
+                        <button class="btn-input text btn-large">
+                            Prova gratis per 30 giorni
+                        </button>
+                        
+                        
+                        <div class="text buy-onclick">
                             <span>
                                 Oppure
                                 <a href="#">
@@ -149,43 +180,78 @@
                                 </a>
                             </span>
                         </div>
+                        <hr>
                         <!-- punti salienti -->
-                        <ul class="advantage-list">
+                        <h5 class="layout-margin">Punti Salienti del piano</h5>
+                        <ul class="fa-ul advantage-list text">
                             <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>Invia fino a 500GB con Dropbox Transfert</span>
                             </li>
                             <li>
-                                lista
-                            </li>
-                            <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>Cartelle online su dispositivi mobili</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="card">
-                
-                    <div class="card-content">
-                        <header>
-                            Titolo header card
-                        </header>
+                    <header class="card-title">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Team</span>
+                    </header>
 
-                        <h2>Titolo</h2>
-                        <div>Prezzo</div>
-                
+                    <div class="card-content">
+                        <h2 class="enlarge-item">Advanced</h2>
+                        <div class="price enlarge-item text">
+                            <span>18.00 &euro;</span>
+                        </div>
+                        <div class="per-month enlarge-item text">
+                            <span>/ mese</span>
+                        </div>
+                    
                         <!-- lista vantaggi business -->
-                        <div class="list-business">
-                            <ul>
-                                <li>Lista</li>
-                                <li>Lista</li>
-                                <li>Lista</li>
+                        <div class="list-business text">
+                            <ul class="fa-ul">
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-users"></i>
+                                    </span>
+                                    <span>
+                                        3 o più utenti
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </span>
+                                    <span>
+                                        Tutto lo spazio di cui ha bisogno <br>
+                                        il tuo team
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+                                    <span>
+                                        Sofisticate funzioni di controllo e per
+                                        tenere al sicuro tutti i file del tuo team
+                                    </span>
+                                </li>
                             </ul>
                         </div>
-                
-                        <button>Prova gratis per 30 giorni</button>
-                
-                        <div>
+                    
+                        <button class="btn-input text btn-large">
+                            Prova gratis per 30 giorni
+                        </button>
+                    
+                        <div class="text buy-onclick">
                             <span>
                                 Oppure
                                 <a href="#">
@@ -193,44 +259,108 @@
                                 </a>
                             </span>
                         </div>
+                        <hr>
                         <!-- punti salienti -->
-                        <ul class="advantage-list">
+                        <h5 class="layout-margin">Punti Salienti del piano</h5>
+                        <ul class="fa-ul advantage-list text">
                             <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>
+                                    Nessun limite di spazio per i file
+                                </span>
                             </li>
                             <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>
+                                    Cartelle online su dispositivi mobili
+                                </span>
                             </li>
                             <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>
+                                    Risparmio del 50% rispetto alle iscrizioni singole
+                                </span>
+                            </li>
+                            <li>
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>
+                                    possibilità di inserire nuovi membri nel team
+                                </span>
+                            </li>
+                            <li>
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>
+                                    Gestione dei permessi in base ai ruoli
+                                </span>
                             </li>
                         </ul>
-                    
                     </div>
                 
                 </div>
 
                 <div class="card">
+                    <header class="card-title">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Azienda</span>
+                    </header>
                 
                     <div class="card-content">
-                        <header>
-                            Titolo header card
-                        </header>
-                        <h2>Titolo</h2>
-                        <div>Prezzo</div>
-                
+                        <h2 class="enlarge-item">Enterprise</h2>
+                        <div class="price enlarge-item text">
+                            <span>Contattaci</span>
+                        </div>
+                        <div class="per-month enlarge-item text">
+                            <span>-</span>
+                        </div>
+                    
                         <!-- lista vantaggi business -->
-                        <div class="list-business">
-                            <ul>
-                                <li>Lista</li>
-                                <li>Lista</li>
-                                <li>Lista</li>
+                        <div class="list-business text">
+                            <ul class="fa-ul">
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <span>
+                                        10 o più utenti
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </span>
+                                    <span>
+                                        Soluzioni personalizzabili per la <br>
+                                        tua azienda
+                                    </span>
+                                    
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+                                    <span>
+                                        Assistenza personalizzata per aiutare gli amministratori
+                                        in una <br> gestione su larga scala
+                                    </span>
+                                </li>
                             </ul>
                         </div>
-                
-                        <button>Prova gratis per 30 giorni</button>
-                
-                        <div>
+                    
+                        <button class="btn-input text btn-large">
+                            Contattaci
+                        </button>
+                    
+                        <div class="text buy-onclick">
                             <span>
                                 Oppure
                                 <a href="#">
@@ -238,20 +368,25 @@
                                 </a>
                             </span>
                         </div>
+                        <hr>
                         <!-- punti salienti -->
-                        <ul class="advantage-list">
+                        <h5 class="layout-margin">Punti Salienti del piano</h5>
+                        <ul class="fa-ul advantage-list text">
                             <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>Invia fino a 500GB con Dropbox Transfert</span>
                             </li>
                             <li>
-                                lista
-                            </li>
-                            <li>
-                                lista
+                                <span class="fa-li">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span>Cartelle online su dispositivi mobili</span>
                             </li>
                         </ul>
-                
                     </div>
+                    
                 
                 </div>
                 
@@ -261,35 +396,31 @@
         </section>
 
         <!-- box enterprise -->
-        <section class="container-main content">
-            
-            <div class="center-container">
-
-                <div id="card-enterprise">
-                    <aside id="info">
-                        <header>
-                            Titolo header enterprise
-                        </header>
-                        <h2>Titolo enterprise</h2>
-                        <h4>Contatta l'ufficio vendite</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </aside>
-                    <aside id="contact">
-                        <button>Contatta l'ufficio vendite</button>
-                    </aside>
-                </div>
-        
+        <section class="container-main layout-margin">
+            <header class="card-enterprise">
+                Titolo header enterprise
+            </header>
+            <div class="card-enterprise">
+                <aside id="info">
+                    <h2>Titolo enterprise</h2>
+                    <h4>Contatta l'ufficio vendite</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </aside>
+                <aside id="contact">
+                    <button>Contatta l'ufficio vendite</button>
+                </aside>
             </div>
+        
                 
         </section>
 
         <!-- immagine e testo -->
-        <section class="container-main content">
+        <section class="container-main layout-padding">
 
             <div class="flex-container">
-                <figure class="image" id="image-partners">
+                <figure class="image image-box">
                     <img src="img/partner.png" alt="">
                 </figure>
                 <aside class="box-text">
@@ -310,9 +441,11 @@
 
         <!-- sezione immagini e testi -->
 
-        <section class="container-main content">
-            
-            <div class="flex-container">
+        <section class="container-main layout-padding">
+            <h1 class="second-text">
+                Esegui più operazioni con Dropbox Business
+            </h1>
+            <div class="row-col">
                 <div class="card-info"></div>
                 <div class="card-info"></div>
                 <div class="card-info"></div>
@@ -324,9 +457,9 @@
         </section>
 
         <!-- sezione Testo -->
-        <section class="container-main content">
+        <section class="container-main layout-padding">
             
-            <h1 class="title">
+            <h1 class="title second-text">
                 Più di 500.000 teams utilizzano 
                 <br>Dropbox Business
             </h1>
@@ -337,11 +470,13 @@
         </section>
 
         <!-- sponsor -->
-        <section>
+        <section class="layout-padding">
 
             <div class="flex-container">
                 <div class="col">
-                    <div class="square"></div>
+                    <div class="square">
+                        <img src="img/lonely_planet.svg" alt="">
+                    </div>
                     <div class="square"></div>
                     <div class="square"></div>
                     <div class="square"></div>
@@ -361,10 +496,10 @@
         <section class="content-row">
             
             <div class="container-main">
-                <div class="flex-object">
+                <div class="flex-object enlarge">
 
-                    <h1 class="title">
-                        Porta Dropbox business nella tua azienda
+                    <h1 class="title second-text">
+                        Porta Dropbox business <br>nella tua azienda
                     </h1>
                     <button>
                         Inzia la tua prova gratuita
@@ -376,30 +511,30 @@
         </section>
 
         <!-- FAQ -->
-        <section class="container-main content">
+        <section class="container-main">
             
             <div class="center-container">
 
-                <h1 class="title">
+                <h1 class="title second-text">
                     Domande frequenti
                 </h1>
                 <!-- accordion -->
 
-                    <div class="row flex-object">
+                    <div class="row flex-object border-top">
                         <span>
                             Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
                         </span>
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
                     
-                    <div class="row flex-object">
+                    <div class="row flex-object border-top border-bottom">
                         <span>
                             Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
                         </span>
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
                     
-                    <div class="row flex-object">
+                    <div class="row flex-object border-bottom">
                         <span>
                             Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
                         </span>
@@ -421,95 +556,110 @@
 
                 <!-- Dropbox -->
                 <div class="col-footer">
-                    <h3>Titolo</h3>
+                    <h3>Dropbox</h3>
                     <ul class="menu-footer">
                         <li>
-                            <a href="#"></a>
+                            <a href="#">Applicazione desktop</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Piani</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- prodotti -->
                 <div class="col-footer">
-                    <h3>Titolo</h3>
+                    <h3>Prodotti</h3>
                     <ul class="menu-footer">
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Applicazione desktop</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Piani</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- azienda -->
                 <div class="col-footer">
-                    <h3>Titolo</h3>
+                    <h3>Azienda</h3>
                     <ul class="menu-footer">
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Applicazione desktop</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Piani</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- supporto -->
                 <div class="col-footer">
-                    <h3>Titolo</h3>
+                    <h3>Supporto</h3>
                     <ul class="menu-footer">
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Applicazione desktop</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Piani</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- community -->
                 <div class="col-footer">
-                    <h3>Titolo</h3>
+                    <h3>Community</h3>
                     <ul class="menu-footer">
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Applicazione desktop</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Piani</a>
                         </li>
                         <li>
-                            <a href="#">Item</a>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
                         </li>
                     </ul>
                 </div>
