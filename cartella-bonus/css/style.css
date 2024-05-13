@@ -139,13 +139,13 @@ button{
 
 .col-nav{
     display: flex;
-    margin: 8px;
 }
 
 .menu{
     display: flex;
     list-style-type: none;
-    line-height: 40px;
+    line-height: 55px;
+    height: 60px;
 }
 
 .col-nav li{
@@ -161,8 +161,8 @@ button{
 }
 
 #logo img {
-    width: 80%;
-    margin-top: 10px;
+    width: 70%;
+    padding: 20px;
 }
 
 #logo a{

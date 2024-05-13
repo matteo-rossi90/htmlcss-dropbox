@@ -15,6 +15,7 @@
 }
 
 #dropdown-content{
+    top: 55px;
     position: absolute;
     padding: 10px 0;
     background-color: rgb(233, 233, 233);
