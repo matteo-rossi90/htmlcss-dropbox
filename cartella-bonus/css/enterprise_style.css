@@ -44,7 +44,7 @@ hr {
 }
 
 .enlarge {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .enlarge-item {
@@ -166,8 +166,8 @@ button {
 
 /* prima sezione */
 .section-light{
-    /* height: 900px; */
     background-color: #F7F5F2;
+    padding: 60px 0;
 }
 
 .main-title {
@@ -180,7 +180,6 @@ button {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    padding: 40px 0;
 }
 
 #box-text-jumbo h4{
@@ -190,42 +189,92 @@ button {
 /* seconda sezione */
 
 .section-dark{
-    height: 900px;
-    background-color: black;
+    background-color: #1E1919;
     color: white;
+    padding: 60px 0;
 }
 
-.white-text{
+.title{
     font-size: 30px;
     text-align:center;
+    margin: 20px 0
 }
 
 .container-text{
     margin: 20px 50px;
+    text-align: center;
 }
 
 #flex-card{
     display: flex;
     justify-content: space-between;
     margin: 60px 0;
+    gap:40px;
 }
 
 .card{
-    height: 500px;
-    width: calc(100% / 4 - 10px);
-    background-color: green;
-    border: 1px dashed yellow;
+    width: calc(100% / 4);
 }
 
 .card img{
     width: 100%;
 }
 
-.dark-paragraph{
-    color: white;
-    font-size: 16px;
+.dark-paragraph, .link{
     text-align: center;
     margin: 20px 0;
+}
+
+.dark-paragraph{
+    font-size: 16px;
+}
+
+.link{
+    font-size: 20px;
+}
+
+#dark-link a{
+    color: white;
+}
+
+.link i{
+    padding: 0 10px;
+}
+
+.box-card h3, .box-card p, .box-text h3, .box-text p{
+    margin: 20px 0;
+}
+
+/* sezione caratteristiche */
+
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text{
+    min-width: 40%;
+    padding: 40px;
+}
+
+.box-image{
+    min-width: 60%;
+}
+
+.box-image img{
+    width: 100%;
+}
+
+#btn-contact{
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+/* dimensioni icone nelle cards */
+
+.box-card i{
+    font-size: 65px;
 }
 
 /* FOOTER */

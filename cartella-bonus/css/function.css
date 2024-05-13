@@ -61,7 +61,7 @@ a .fa-arrow-down{
 
 /* hover per bottoni prova gratuita e partners */
 
-#btn-partner:hover{
+#btn-partner:hover, #btn-contact:hover{
     background-color: black;
     color: white;
 }
