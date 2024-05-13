@@ -15,7 +15,6 @@
 }
 
 #dropdown-content{
-    top: 55px;
     position: absolute;
     padding: 10px 0;
     background-color: rgb(233, 233, 233);
@@ -71,7 +70,7 @@ a .fa-arrow-down{
 #btn-gratis:hover{
     background-color: #0061FF;
     color: white;
-} 
+}
 
 /* hover su riquadri sponsor */
 

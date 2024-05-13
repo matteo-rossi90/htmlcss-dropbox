@@ -138,7 +138,6 @@ button {
     display: flex;
     list-style-type: none;
     line-height: 55px;
-    height: 60px;
 }
 
 .col-nav li {
