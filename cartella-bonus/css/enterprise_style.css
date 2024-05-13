@@ -192,11 +192,11 @@ button {
 .section-dark{
     height: 900px;
     background-color: black;
+    color: white;
 }
 
 .white-text{
     font-size: 30px;
-    color: white;
     text-align:center;
 }
 

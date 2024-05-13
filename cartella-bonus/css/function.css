@@ -9,26 +9,37 @@
 /* dropdown menu */
 .dropdown-menu{
     position: relative;
+    font-size: 14px;
+    color: #666464;
 }
 
-.dropdown-text ul{
-    list-style-type: none;
-}
-
-.dropdown-text{
+#dropdown-content{
     position: absolute;
-    border: 1px solid grey;
-    border-radius: 10px;
-    top: 65px;
-    background-color: white;
-    min-width: 100px;
+    padding: 10px 0;
+    background-color: rgb(233, 233, 233);
+    min-width: 180px;
     display: none;
-    padding: 12px 16px;
-    z-index: 800;
 }
 
-.dropdown-menu:hover + .dropdown-text{
+#dropdown-content ul li{
+    list-style-type: none;
+    padding: 0;
+}
+
+#dropdown-content a{
+    display: block;
+    padding: 0px 12px;
+}
+
+.dropdown-menu:hover #dropdown-content{
     display:block;
+}
+
+#dropdown-content a:hover{
+    display: block;
+    color: black;
+    width: 100%;
+    background-color: rgb(183, 183, 183);
 }
 
 /* scroll graduale quando si passa alla sezione delle offerte */
