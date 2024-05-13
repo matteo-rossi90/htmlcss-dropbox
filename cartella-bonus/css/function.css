@@ -1,0 +1,92 @@
+/* regole funzioni hover */
+
+/* hover nella barra di navigazione in alto */
+
+.navbar-hover:hover {
+    border-bottom: black 3.5px solid;
+}
+
+/* dropdown menu */
+.dropdown-menu{
+    position: relative;
+}
+
+.dropdown-text ul{
+    list-style-type: none;
+}
+
+.dropdown-text{
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 10px;
+    top: 65px;
+    background-color: white;
+    min-width: 100px;
+    display: none;
+    padding: 12px 16px;
+    z-index: 800;
+}
+
+.dropdown-menu:hover + .dropdown-text{
+    display:block;
+}
+
+/* scroll graduale quando si passa alla sezione delle offerte */
+
+html{
+    scroll-behavior: smooth;
+}
+
+a .fa-arrow-down{
+    color: black;
+    cursor: pointer;
+}
+
+/* hover per bottoni blu */
+
+.btn-enter:hover{
+    opacity: 0.8;
+}
+
+/* hover per bottoni prova gratuita e partners */
+
+#btn-partner:hover{
+    background-color: black;
+    color: white;
+}
+
+#btn-gratis:hover{
+    background-color: #0061FF;
+    color: white;
+} 
+
+/* hover su riquadri sponsor */
+
+.square:hover{
+    border: 10px solid #D1E9CD;
+}
+
+/* hover accordion */
+
+.accordion-text{
+    display:none;
+    transition: 0.8s;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.row:hover + .accordion-text{
+    display:block;
+}
+
+/* icona chevron down dell'accordion che cambia con hover */
+
+.row:hover .fa-chevron-down:before {
+    content: '\f077';
+}
+
+/* hover nelle voci del footer */
+
+footer a:hover {
+    text-decoration: underline;
+}

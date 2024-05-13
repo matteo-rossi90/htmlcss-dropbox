@@ -1,0 +1,280 @@
+/* regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container,
+.container-main {
+    margin: 0 auto;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 20%;
+    border-top: 1px solid #aeaeae;
+    margin: 20px 0;
+}
+
+/* proprietà larghezza jumbotron e footer */
+
+.container {
+    width: 75%;
+}
+
+/* proprietà che regolano la spaziatura delle sezioni e dei testi */
+
+.layout-margin {
+    margin-top: 30px;
+}
+
+.layout-padding {
+    padding-top: 8%;
+}
+
+.layout-text {
+    padding-top: 40px;
+}
+
+.enlarge {
+    padding: 70px 0;
+}
+
+.enlarge-item {
+    padding: 5px 0;
+}
+
+/* proprietà larghezza sezioni della parte centrale */
+
+.container-main {
+    width: 60%;
+}
+
+/* proprietà geneali bottoni */
+
+button {
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn-input {
+    padding: 8px 16px;
+}
+
+.btn-big{
+    padding: 20px 36px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.btn-enter {
+    color: white;
+    background-color: #0061FF;
+}
+
+.btn-large {
+    width: 100%;
+}
+
+#btn-margin{
+    margin: 60px 0;
+}
+
+/* regola flex oggetti */
+
+.flex-object {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* regola generale colonne e immagine jumbotron */
+
+#box-text-jumbo,
+#text-jumbo {
+    margin-top: 10px;
+}
+
+#box-text-jumbo {
+    max-width: 30%;
+}
+
+#box-text-jumbo span {
+    display: block;
+}
+
+#image-jumbo {
+    max-width: 70%;
+}
+
+#image-jumbo img {
+    width: 100%;
+}
+
+#navbar {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+
+.col-nav {
+    display: flex;
+    margin: 8px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.col-nav li {
+    padding: 0 15px;
+}
+
+.col-nav li a {
+    color: #666464;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 18px 0;
+    font-size: 14px;
+}
+
+#logo img {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#logo a {
+    padding-left: 15px;
+}
+
+/* parte del jumbotron enterprise */
+
+/* prima sezione */
+.section-light{
+    /* height: 900px; */
+    background-color: #F7F5F2;
+}
+
+.main-title {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0;
+}
+
+#box-text-jumbo h4{
+    margin: 10px 0;
+}
+
+/* seconda sezione */
+
+.section-dark{
+    height: 900px;
+    background-color: black;
+}
+
+.white-text{
+    font-size: 30px;
+    color: white;
+    text-align:center;
+}
+
+.container-text{
+    margin: 20px 50px;
+}
+
+#flex-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.card{
+    height: 500px;
+    width: calc(100% / 4 - 10px);
+    background-color: green;
+    border: 1px dashed yellow;
+}
+
+.card img{
+    width: 100%;
+}
+
+.dark-paragraph{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#footernav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 6% 0;
+}
+
+.col-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul.menu-footer li {
+    padding: 10px 0;
+}
+
+.menu-footer {
+    list-style-type: none;
+}
+
+.col-footer ul li {
+    display: flex;
+}
+
+/* regole selettore lingua */
+
+#lang {
+    border-top: 1px solid grey;
+    padding: 40px 0;
+    width: 10%;
+    color: grey;
+}
+
+#lang .fa-chevron-up {
+    font-size: 8px;
+}

@@ -12,7 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-
+        
+    <!-- icona sito vicino al title del documento html -->
+    <link rel="icon" type="image/x-icon" href="img/dropbox-icon.webp">
+    
+    <!-- file per le funzioni css -->
+    <link rel="stylesheet" href="css/function.css">
+    
     <!-- file css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Dropbox</title>
@@ -36,13 +42,16 @@
                     </div>
                     <ul class="menu">
                         <li>
-                            <a href="#">Perché Dropbox</a>
+                            <a class="navbar-hover" href="#">Perché Dropbox</a>
                         </li>
                         <li>
-                            <a href="#">Funzioni</a>
+                            <a class="navbar-hover" href="#">Funzioni</a>
                         </li>
                         <li>
-                            <a href="#">Piani e Prezzi</a>
+                            <a class="navbar-hover" href="#">Piani e Prezzi</a>
+                        </li>
+                        <li>
+                            <a class="navbar-hover" href="enterprise.html">Enterprise</a>
                         </li>
                     </ul>
                 </div>
@@ -51,13 +60,26 @@
                 <div class="col-nav">
                     <ul class="menu">
                         <li>
-                            <a href="#">Supporto</a>
+                            <a class="navbar-hover dropdown-menu">Supporto</a>
+                            <div class="dropdown-text">
+                                <ul>
+                                    <li>
+                                        <a href="#">Assistenza</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Supporto tecnico</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contatti</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">Contatta l'ufficio vendite</a>
+                            <a class="navbar-hover" href="#">Contatta l'ufficio vendite</a>
                         </li>
                         <li>
-                            <a href="#">Accedi</a>
+                            <a class="navbar-hover" href="#">Accedi</a>
                         </li>
                         <li>
                             <!-- bottone inizia -->
@@ -93,7 +115,9 @@
                             Inizia la tua prova gratuita
                         </button>
                         <span>Annulla in qualsiasi momento</span>
-                        <i class="fa-solid fa-arrow-down"></i>
+                        <a href="#tag">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
                     </div>
                     <figure id="image-jumbo">
                         <img src="img/jumbo.png" alt="drop box jumbotron">
@@ -108,30 +132,40 @@
     <main>
 
         <!-- piano business -->
-        <section class="container-main layout-padding">
+        <section class="container-main layout-padding" id="tag">
             <h1 class="title second-text">Trova il piano che fa più per te</h1>
 
             <!-- checkbox -->
             <div id="checkbox">
                 <span class="circle" id="selected"></span>
-                <span class="text">Fatturazione mensile</span>
+                <span class="text">
+                    Fatturazione mensile
+                </span>
                 <span class="circle" id="unselected"></span>
-                <span class="text">Fatturazione annuale</span>
+                <span class="text">
+                    Fatturazione annuale
+                </span>
             </div>
             <div class="flex-card">
                 <div class="card">
-                    <header class="card-title text">
+                    <header class="card-title">
                         <i class="fa-solid fa-user"></i>
                         <span>Singolo</span>
                     </header>
                     <div class="card-content">
 
-                        <h2 class="enlarge-item">Professional</h2>
+                        <h2 class="enlarge-item">
+                            Professional
+                        </h2>
                         <div class="price enlarge-item text">
-                            <span>12.00 &euro;</span>
+                            <span>
+                                12.00 &euro;
+                            </span>
                         </div>
                         <div class="per-month enlarge-item text">
-                            <span>/ mese</span>
+                            <span>
+                                / mese
+                            </span>
                         </div>
 
                         <!-- lista vantaggi business -->
@@ -141,7 +175,9 @@
                                     <span class="fa-li">
                                         <i class="fa-solid fa-user"></i>
                                     </span>
-                                    <span>1 utente</span>
+                                    <span>
+                                        1 utente
+                                    </span>
                                 </li>
                                 <li>
                                     <span class="fa-li">
@@ -180,37 +216,51 @@
                         </div>
                         <hr>
                         <!-- punti salienti -->
-                        <h5 class="layout-margin">Punti Salienti del piano</h5>
+                        <h5 class="layout-margin">
+                            Punti Salienti del piano
+                        </h5>
                         <ul class="fa-ul advantage-list text">
                             <li>
                                 <span class="fa-li">
                                     <i class="fa-solid fa-check"></i>
                                 </span>
-                                <span>Invia fino a 500GB con Dropbox Transfert</span>
+                                <span>
+                                    Invia fino a 500GB con Dropbox Transfert
+                                </span>
                             </li>
                             <li>
                                 <span class="fa-li">
                                     <i class="fa-solid fa-check"></i>
                                 </span>
-                                <span>Cartelle online su dispositivi mobili</span>
+                                <span>
+                                    Cartelle online su dispositivi mobili
+                                </span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card">
-                    <header class="card-title text">
+                    <header class="card-title">
                         <i class="fa-solid fa-users"></i>
-                        <span>Team</span>
+                        <span>
+                            Team
+                        </span>
                     </header>
 
                     <div class="card-content">
-                        <h2 class="enlarge-item">Advanced</h2>
+                        <h2 class="enlarge-item">
+                            Advanced
+                        </h2>
                         <div class="price enlarge-item text">
-                            <span>18.00 &euro;</span>
+                            <span>
+                                18.00 &euro;
+                            </span>
                         </div>
                         <div class="per-month enlarge-item text">
-                            <span>/ mese</span>
+                            <span>
+                                / mese
+                            </span>
                         </div>
 
                         <!-- lista vantaggi business -->
@@ -307,9 +357,11 @@
                 </div>
 
                 <div class="card">
-                    <header class="card-title text">
+                    <header class="card-title">
                         <i class="fa-solid fa-building"></i>
-                        <span>Azienda</span>
+                        <span>
+                            Azienda
+                        </span>
                     </header>
 
                     <div class="card-content">
@@ -317,7 +369,9 @@
                             Enterprise
                         </h2>
                         <div class="price enlarge-item text">
-                            <span>Contattaci</span>
+                            <span>
+                                Contattaci
+                            </span>
                         </div>
                         <div class="per-month enlarge-item text">
                             <span>-</span>
@@ -492,7 +546,7 @@
                         Passa di meno da uno strumento a un altro
                     </h2>
                     <p>
-                        Porta a termina le attività qauotidiane con un solo strumento.
+                        Porta a termine le attività qauotidiane con un solo strumento.
                         Crea, modifica e condividi contenuti cloud da Documenti, Fogli
                         e Presentazioni di Google, file Microsfot Office e Dropbox
                         Paper direttamente da Dropbox.
@@ -522,7 +576,7 @@
                         Passa di meno da uno strumento a un altro
                     </h2>
                     <p>
-                        Porta a termina le attività quotidiane con un solo strumento.
+                        Porta a termine le attività quotidiane con un solo strumento.
                         Crea, modifica e condividi contenuti cloud da Documenti, Fogli
                         e Presentazioni di Google, file Microsfot Office e Dropbox
                         Paper direttamente da Dropbox.
@@ -537,7 +591,7 @@
                         Passa di meno da uno strumento a un altro
                     </h2>
                     <p>
-                        Porta a termina le attività quotidiane con un solo strumento.
+                        Porta a termine le attività quotidiane con un solo strumento.
                         Crea, modifica e condividi contenuti cloud da Documenti, Fogli
                         e Presentazioni di Google, file Microsfot Office e Dropbox
                         Paper direttamente da Dropbox.
@@ -552,7 +606,7 @@
                         Passa di meno da uno strumento a un altro
                     </h2>
                     <p>
-                        Porta a termina le attività quotidiane con un solo strumento.
+                        Porta a termine le attività quotidiane con un solo strumento.
                         Crea, modifica e condividi contenuti cloud da Documenti, Fogli
                         e Presentazioni di Google, file Microsfot Office e Dropbox
                         Paper direttamente da Dropbox.
@@ -567,7 +621,7 @@
                         Passa di meno da uno strumento a un altro
                     </h2>
                     <p>
-                        Porta a termina le attività quotidiane con un solo strumento.
+                        Porta a termine le attività quotidiane con un solo strumento.
                         Crea, modifica e condividi contenuti cloud da Documenti, Fogli
                         e Presentazioni di Google, file Microsfot Office e Dropbox
                         Paper direttamente da Dropbox.
@@ -680,26 +734,43 @@
                 </h1>
                 <!-- accordion -->
 
-                    <div class="row flex-object border-top">
-                        <span>
-                            Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
-                        </span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-
                     <div class="row flex-object border-top border-bottom">
-                        <span>
+                        <h4>
                             Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
-                        </span>
+                        </h4>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
+                    <p class="accordion-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere natus autem officia quos magnam maxime voluptas, odit veritatis reiciendis nesciunt
+                        in deleniti dolor ipsum consectetur vero id tenetur expedita totam.
+                    </p>
 
                     <div class="row flex-object border-bottom">
-                        <span>
+                        <h4>
                             Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
-                        </span>
+                        </h4>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
+                    <p class="accordion-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere natus autem officia quos magnam maxime voluptas, odit veritatis reiciendis nesciunt
+                        in deleniti dolor ipsum consectetur vero id tenetur expedita totam.
+                    </p>
+
+
+                    <div class="accordion row flex-object border-bottom">
+                        <h4>
+                            Qual è la differenza tra Dropbox Business Standard e Dropbox business advance?
+                        </h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <p class="accordion-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere natus autem officia quos magnam maxime voluptas, odit veritatis reiciendis nesciunt
+                        in deleniti dolor ipsum consectetur vero id tenetur expedita totam.
+                    </p>
+
 
                 </div>
 
