@@ -7,6 +7,7 @@
 }
 
 /* dropdown menu */
+
 .dropdown-menu{
     position: relative;
     font-size: 14px;
@@ -77,11 +78,10 @@ a .fa-arrow-down{
     border: 10px solid #D1E9CD;
 }
 
-/* hover accordion */
+/* hover accordion nella home */
 
 .accordion-text{
     display:none;
-    transition: 0.8s;
     padding: 15px 0;
     font-size: 14px;
 }
@@ -90,7 +90,7 @@ a .fa-arrow-down{
     display:block;
 }
 
-/* icona chevron down dell'accordion che cambia con hover */
+/* icona chevron down dell'accordion che cambia con hover nella pagina home */
 
 .row:hover .fa-chevron-down:before {
     content: '\f077';
